@@ -1,0 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+@import "tailwindcss";
+
+* {
+  --font-sans: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+/* @layer components {
+  .input-box {
+    @apply w-full border-[1.5px] p-3 rounded outline-none;
+  }
+} */
