@@ -4,10 +4,11 @@ import { Github, Menu, Twitter, X } from "lucide-react";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
-  
 
   return (
-    <div className={` py-5 bg-black relative w-full transition-all ease-in-out duration-300`}>
+    <div
+      className={` py-5 bg-black relative w-full transition-all ease-in-out duration-300`}
+    >
       <div className="flex items-center justify-between px-5 md:max-w-7xl mx-auto">
         {/* logo */}
         <a href="">
@@ -34,17 +35,12 @@ const Navbar = () => {
           <Github size={25} className="fill-white cursor-pointer" />
         </div>
 
-        
-
-    <div className="md:hidden flex items-center gap-3">
-    {/* mobile menu toggle */}
-        <button
-          onClick={() => setMenuOpen(!menuOpen)}
-          className=""
-        >
-          {menuOpen ? <X size={30} /> : <Menu size={30} />}
-        </button>
-      </div>
+        <div className="md:hidden flex items-center gap-3">
+          {/* mobile menu toggle */}
+          <button onClick={() => setMenuOpen(!menuOpen)} className="">
+            {menuOpen ? <X size={30} /> : <Menu size={30} />}
+          </button>
+        </div>
       </div>
       {/* mobile nav */}
 
