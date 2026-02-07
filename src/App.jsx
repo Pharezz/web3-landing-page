@@ -1,8 +1,7 @@
 import React, { useRef } from "react";
 import Navbar from "./components/Navbar";
-import { Github, Twitter } from "lucide-react";
 import Card from "./components/Card";
-import { CircleArrowLeft, CircleArrowRight } from "lucide-react";
+import { Github, Twitter, CircleArrowLeft, CircleArrowRight } from "lucide-react";
 
 const App = () => {
   const slideRef = useRef(null);
@@ -23,16 +22,12 @@ const App = () => {
             on the Ethereum blockchain.
           </h3>
 
-          <button className="text-xs text-black bg-white py-3 px-5 rounded-3xl hover:bg-black hover:text-white hover:border hover:border-gray-800 transition-all">
+          <button className="text-xs text-black bg-white py-3 px-5 rounded-3xl hover:bg-black hover:text-white transition-all">
             Mint <span className="font-bold">now</span>
           </button>
         </div>
 
-        <img
-          src="/Auto Layout Horizontal.svg"
-          alt="nft imgs"
-          className="pt-15"
-        />
+        <img src="/hero-layout.svg" alt="hero" className="pt-15 mx-auto" />
       </section>
 
       {/* Featured */}
@@ -40,18 +35,9 @@ const App = () => {
         <div className="md:max-w-6xl mx-auto max-w-md">
           <h1 className="text-center mb-10 text-xl font-bold">Featured In</h1>
           <div className="grid grid-cols-1 gap-10 md:grid-cols-3">
-            <Card
-              title="Mashable"
-              text="This ethereum-based project could change how we think about digital art"
-            />
-            <Card
-              title="Mashable"
-              text="CryptoKitties, CryptoPunks and the birth of a cottage industry"
-            />
-            <Card
-              title="Mashable"
-              text="‘Obviously, we had no idea it was going to get here,’ say the guys who made the first NFT"
-            />
+            <Card title="Mashable" text="This ethereum-based project could change how we think about digital art" />
+            <Card title="Mashable" text="CryptoKitties, CryptoPunks and the birth of a cottage industry" />
+            <Card title="Mashable" text="The guys who made the first NFT had no idea it would get here" />
           </div>
         </div>
       </section>
@@ -62,24 +48,24 @@ const App = () => {
           <div className="grid md:grid-cols-2 gap-40">
             <h1 className="text-2xl font-bold">Meet The Punks</h1>
             <p className="text-sm md:text-xs">
-              The CryptoPunks are 24x24 pixel art images, generated algorithmically.
+              CryptoPunks are 24x24 pixel art images generated algorithmically.
             </p>
           </div>
 
           <div className="pt-20 grid md:grid-cols-2 gap-10">
             <div className="flex flex-col gap-5">
               <div className="border border-gray-800 rounded-3xl p-8 bg-[#03759788]">
-                Punks with a blue background are not for sale.
+                Blue background punks are not for sale.
               </div>
               <div className="border border-gray-800 rounded-3xl p-8">
-                Punks with a red background are available for sale.
+                Red background punks are for sale.
               </div>
               <div className="border border-gray-800 rounded-3xl p-8">
-                Punks with a purple background have an active bid.
+                Purple background punks have active bids.
               </div>
             </div>
 
-            <img src="/image.svg" alt="blue punk" />
+            <img src="/punk-blue.svg" alt="blue punk" />
           </div>
         </div>
       </section>
@@ -92,12 +78,12 @@ const App = () => {
             className="flex gap-10 overflow-x-hidden pt-10 scroll-smooth"
           >
             {[
-              "/image (1).svg",
-              "/frame (1).svg",
-              "/frame.svg",
-              "/frame (2).svg",
-              "/frame (3).svg",
-              "/image (2).svg",
+              "/punk-1.svg",
+              "/punk-2.svg",
+              "/punk-3.svg",
+              "/punk-4.svg",
+              "/punk-5.svg",
+              "/punk-6.svg",
             ].map((img, i) => (
               <div key={i} className="flex flex-col gap-5">
                 <img src={img} alt="punk" />
@@ -127,22 +113,22 @@ const App = () => {
           <div className="grid md:grid-cols-2 gap-20">
             <h1 className="text-2xl font-bold">How do I get a Punk</h1>
 
-            <div className="flex gap-10">
-              <img src="/image (3).svg" alt="wolf icon" width={45} />
+            <div className="flex gap-6">
+              <img src="/wolf-icon.svg" width={45} />
               <div>
-                <h1 className="font-bold">Install MetaMask</h1>
+                <h2 className="font-bold">Install MetaMask</h2>
                 <p className="text-xs">
-                  Install MetaMask to access your Ethereum account.
+                  Install MetaMask to access Ethereum.
                 </p>
               </div>
             </div>
 
-            <div className="flex gap-10">
-              <img src="/image (4).svg" alt="diamond icon" width={45} />
+            <div className="flex gap-6">
+              <img src="/diamond-icon.svg" width={45} />
               <div>
-                <h1 className="font-bold">Buy Ethereum</h1>
+                <h2 className="font-bold">Buy Ethereum</h2>
                 <p className="text-xs">
-                  Buy ETH directly through MetaMask or Coinbase.
+                  Purchase ETH via MetaMask or Coinbase.
                 </p>
               </div>
             </div>
